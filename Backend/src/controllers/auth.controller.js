@@ -90,7 +90,7 @@ const loginUser = asyncHandler(async (req, res) => {
         return new ApiError(401, "Email is required");
     }
 
-    const user = await User.findById({ email });
+    const user = await User.findOne({ email });
 
     if (!user) {
         return new ApiError(401, "User do not exist");

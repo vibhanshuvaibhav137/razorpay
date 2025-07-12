@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
 import { getProfile, updateProfile } from "../controllers/user.controller.js";
-import { updateProfileValidation } from "../middlewares/validation.middleware";
+import { updateProfileValidation } from "../middlewares/validation.middleware.js";
 
 const user = Router();
 

@@ -21,7 +21,7 @@ const createOrder = asyncHandler(async (req, res) => {
     const options = {
         amount: amount * 100,
         currency: "INR",
-        receipt: `receipt_${userId}_${Date.now()}`,
+        receipt: `rcpt_${userId.toString().slice(-6)}_${Date.now().toString().slice(-6)}`,
         payment_capture: 1,
     };
 

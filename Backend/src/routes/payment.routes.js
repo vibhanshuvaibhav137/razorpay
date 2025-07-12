@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { verifyJWT } from "../middlewares/auth.middleware";
-import { addMoneyValidation } from "../middlewares/validation.middleware";
-import { createOrder, getPaymentHistory, getTransactionHistory, verifyPayment } from "../controllers/payment.controller";
+import { verifyJWT } from "../middlewares/auth.middleware.js";
+import { addMoneyValidation } from "../middlewares/validation.middleware.js";
+import { createOrder, getPaymentHistory, getTransactionHistory, verifyPayment } from "../controllers/payment.controller.js";
 
 const payment = Router();
 
